@@ -1,0 +1,83 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: .8rem 1rem .8rem .8rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: $white-bg;
+  @extend .container;
+  height: 64.56px;
+  margin: 0 auto;
+
+  &_flex {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  &_logo {
+    font-weight: $font-bold;
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  &_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &_icon {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: $font-normal;
+
+    &-light {
+      color: transparent;
+      -webkit-text-stroke: 1px $primary-color;
+    }
+    
+    &-open {
+      font-size: 25px;
+      cursor: pointer;
+      
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    &-close {
+      font-size: 30px;
+      cursor: pointer;
+      display: none;
+    }
+
+    &:not(:nth-child(3)):hover {
+      color: $secondary-color;
+    }
+
+    &:nth-child(3):hover {
+      -webkit-text-stroke-color: $secondary-color;
+    }
+  }
+
+  &_nav-link {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: $font-normal;
+    padding: .8rem .5rem;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: #fff;
+    }
+  }
+}

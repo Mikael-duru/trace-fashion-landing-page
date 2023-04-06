@@ -1,0 +1,49 @@
+.category {
+  padding: 3rem 1rem 0;
+
+  &_groups {
+    margin-bottom: 15px;
+    display: grid;
+    place-content: center;
+    gap: 15px;
+  }
+
+  &_group {
+    vertical-align: middle;
+
+    &-span-2 {
+      grid-column: span 2;
+    }
+  }
+
+  &_summer {
+    position: relative;
+    max-width: fit-content;
+    max-height: 574px;
+    margin: 0 auto;
+  }
+
+  &_overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 0px 12px #000;
+    }
+  }
+
+  &_img {
+    mix-blend-mode: multiply;
+    vertical-align: middle;
+  }
+
+  &_btn {
+    position: absolute;
+    bottom: 25px;
+    left: 8px;
+    background-color: $white-bg;
+    @extend %p-medium;
+    padding: 4px 20px;
+    border-radius: 10px;
+  }
+}

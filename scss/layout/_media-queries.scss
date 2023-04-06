@@ -1,0 +1,460 @@
+@media screen and (max-width: 600px) {
+  .nav {
+    &_navbar {
+      position: absolute;
+      top: 100%;
+      left: -100%;
+      background-color: $white-bg;
+      width: 100%;
+      padding: 2rem 0.8rem 0.2rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      z-index: 5;
+
+      &.show {
+        left: 0;
+      }
+    }
+
+    &_nav-link {
+      display: inline-block;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.08);
+      border-radius: 0.3rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  }
+}
+
+
+@media screen and (min-width: 375px) {
+  .hero {
+    &_btn {
+      width: 140px;
+      height: 50px;
+    }
+  }
+
+  .category {
+    padding: 4rem 1.5rem 0;
+
+    &_btn {
+      padding: 4px 27px;
+      left: 10px;
+    }
+  }
+
+  .tachen {
+    &_content {
+      left: 4%;
+    }
+  
+    &_excert {
+      font-size: 1.1rem;
+    }
+  
+    &_heading {
+      font-size: 1.8rem;
+    }
+  
+    &_btn {
+      font-size: 0.8rem;
+      line-height: 27px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 425px) {
+  .tachen {
+    &_heading {
+      font-size: 2rem;
+      font-weight: $font-bold;
+      line-height: 1.7;
+    }
+  
+    &_btn {
+      padding: 4px 9px;
+      font-size: 0.9rem;
+    }
+  }
+
+  .footer {
+    padding: 5rem 1rem;
+
+    &_newsletter-heading {
+      font-size: 1.5625rem;
+      padding-bottom: 1rem;
+    }
+
+    &_form {
+      margin-bottom: 4.375rem;
+    }
+
+    &_form-input {
+      width: 85%;
+    }
+  
+    &_form-submit {
+      width: 15%;
+    }
+
+    &_menu {
+      gap: 4rem;
+    }
+
+    &_menu-heading {
+      margin-bottom: 1.6875rem;
+    }
+
+    &_menu-items {
+      gap: 1.3125rem;
+    }
+
+    &_logo {
+      padding-top: 5rem;
+      padding-bottom: .7rem;
+    }
+  
+    &_excert {
+      padding-bottom: 2.5625rem;
+    }
+
+    &_location {
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+
+@media screen and (min-width: 601px) {
+  .nav {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .nav_icon-open {
+    display: none;
+  }
+
+  .nav_nav-items {
+    display: flex;
+    gap: .8rem;
+  }
+
+  .category {
+    padding-top: 70px;
+    
+    &_groups {
+      // margin-bottom: 20px;
+      gap: 20px;
+    }
+
+    &_btn {
+      padding: 4px 60px;
+      left: 20px;
+    }
+  }
+
+  .womenFashion {
+    padding-top: 113px;
+
+    &_cards {
+      grid-template-columns: repeat(2, 268px);
+      column-gap: 22px;
+      row-gap: 3.5rem;
+    }
+  
+    .womenFashion_headline {
+      padding-bottom: 65px;
+    }
+
+    &_brand-name {
+      padding-top: 2.375rem;
+    }
+  }
+
+  .menFashion {
+    padding-top: 111px;
+  
+    .womenFashion_headline {
+      padding-bottom: 72px;
+    }
+
+    &_brand-name {
+      padding-top: 1.9375rem;
+    }
+  }
+
+  .tachen {
+    margin-top: 120px;
+
+    &_content {
+      left: 5%;
+      bottom: 40px;
+    }
+
+    &_excert {
+      line-height: 27px;
+    }
+
+    &_heading {
+      font-size: 2.7rem;
+    }
+  
+    &_btn {
+      padding: 8px 20px;
+      font-size: 1.1rem;
+      line-height: 27px;
+    }
+  }
+
+  .footer {
+    padding-top: 5.5rem;
+    padding-left: 10%;
+    padding-bottom: 5.5rem;
+    padding-right: 10%;
+
+    &_newsletter-heading {
+      padding-bottom: 1.5rem;
+    }
+
+    &_form-input {
+      padding-left: 1.5rem;
+    }
+
+    &_form-submit {
+      padding-right: 1.4375rem;
+    }
+
+    &_menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      text-align: left;
+      gap: 3rem;
+    }
+
+    &_logo {
+      padding-bottom: 1.0625rem;
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .nav {
+    padding: 12px 50px 9.52px;
+  }
+
+  .hero {
+    &_content{
+      width: 320px;
+      text-align: left;
+      padding: 0;
+      position: absolute;
+      bottom: 60px;
+      right: 20px;
+    }
+
+    &_heading {
+      font-size: 3.5rem;
+    }
+
+    &_excert {
+      font-size: 1.125rem;
+    }
+  
+    &_btns {
+      justify-content: start;
+    }
+  }
+
+  .category {
+    display: grid;
+    grid-template-columns: 355px 367px;
+    place-content: center;
+    gap: 15px;
+
+    &_groups {
+      margin-bottom: 0px;
+      gap: 20px;
+    }
+
+    &_btn {
+      padding: 4px 31px;
+    }
+  }
+
+  .tachen_heading {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    padding: 12px 75px 9.52px 88px;
+
+    &_icons {
+      gap: 47px;
+    }
+  }
+
+  .hero {
+    &_content{
+      width: 410px;
+      bottom: 89.37px;
+      right: 35px;
+    }
+
+    &_heading {
+      font-size: 4.5rem;
+      line-height: 120px;
+    }
+
+    &_btns {
+      gap: 34px;
+    }
+  
+    &_btn {
+      width: 147px;
+      height: 50px;
+    }
+  }
+
+  .category {
+    grid-template-columns: 465px 475px;
+    gap: 30px;
+
+    &_groups {
+      row-gap: 22.67px;
+      column-gap: 25.63px;
+    }
+
+    &_btn {
+      padding: 4px 55px;
+    }
+  }
+
+  .womenFashion_cards {
+    grid-template-columns: repeat(3, 268px);
+  }
+
+  .tachen {
+    margin-top: 130px;
+
+    &_content {
+      left: 10%;
+      bottom: 50px;
+    }
+
+    &_heading {
+      font-size: 3.5rem;
+    }
+
+    &_btn {
+      padding: 11px 25px 12px 26px;
+    }
+  }
+
+  .footer {
+    padding-top: 7.1875rem;
+    padding-left: 8%;
+    padding-top: 6.625rem;
+    padding-right: 8%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &_item {
+      flex-shrink: 0;
+    }
+
+    &_newsletter {
+      align-items: start;
+    }
+
+    &_menu {
+      gap: 4.1rem;
+    }
+    
+    &_logo {
+      padding-top: 0;
+    }
+
+    &_excert {
+      margin-right: 5rem;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    &_content{
+      right: 150px;
+    }
+
+    &_heading {
+      font-size: 5rem;
+    }
+  }
+
+  .category {
+    padding-top: 123px;
+    grid-template-columns: 542px 552px;
+
+    &_btn {
+      padding: 4px 63px 4px 64px;
+      left: 28px;
+    }
+  }
+
+  .womenFashion_cards {
+    grid-template-columns: repeat(4, 268px);
+    gap: 22px;
+  }
+
+  .tachen {
+    margin-top: 157px;
+
+    &_content {
+      bottom: 114px;
+    }
+
+    &_heading {
+      font-size: 5rem;
+      line-height: 120px;
+    }
+  }
+
+  .footer {
+    padding-right: 10%;
+    padding-left: 10%;
+
+    &_menu {
+      gap: 5.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1593px) {
+  .hero {
+    &_content{
+      width: 453px;
+      bottom: 89.37px;
+      right: 231px;
+    }
+  }
+
+  .tachen {
+    &_content {
+      left: 230px;
+    }
+  }
+
+  .footer {
+    padding-right: 14.3125rem;
+    padding-left: 14.375rem;
+  }
+}

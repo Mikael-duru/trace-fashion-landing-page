@@ -1,0 +1,39 @@
+.menFashion {
+  padding: 4.5rem 1rem 0;
+
+  &_heading {
+    @extend .womenFashion_heading;
+  }
+
+  &_headline {
+    @extend .womenFashion_headline;
+  }
+
+  &_cards {
+    @extend .womenFashion_cards;
+  }
+
+  &_card {
+    @extend .womenFashion_card;
+  }
+
+  &_brand-name {
+    @extend .womenFashion_brand-name;
+  }
+
+  &_desc {
+    @extend .womenFashion_desc;
+  }
+
+  &_prices {
+    @extend .womenFashion_prices;
+  }
+
+  &_price-old {
+    @extend .womenFashion_price-old;
+  }
+
+  &_price-new {
+    @extend .womenFashion_price-new;
+  }
+}

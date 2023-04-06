@@ -1,0 +1,45 @@
+.hero {
+  margin-top: 64.56px;
+  position: relative;
+
+  &_content{
+    text-align: center;
+    padding: 1rem;
+  }
+
+  &_heading {
+    @extend %h2-mobile;
+  }
+
+  &_excert {
+    @extend %p-medium;
+    margin-bottom: 20px;
+  }
+
+  &_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  &_btn {
+    width: 130px;
+    height: 40px;
+    @extend %p-medium;
+    letter-spacing: 0.05rem;
+    color: #fff;
+    background-color: $primary-color;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid $primary-color;
+    cursor: pointer;
+
+    &:hover {
+      background-color: transparent;
+      color: $primary-color;
+    }
+  }
+
+}

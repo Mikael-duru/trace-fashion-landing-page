@@ -1,0 +1,61 @@
+.womenFashion {
+  padding: 5rem 1rem 0;
+
+  &_heading {
+    @extend %h3;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  &_headline {
+    @extend %p-normal;
+    padding-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  &_cards {
+    display: grid;
+    place-content: center;
+    gap: 3.3rem;
+  }
+
+  &_card {
+    background-color: $white-bg;
+    max-width: 268px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, .16);
+    border-radius: 5px;
+    overflow: hidden;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+
+  &_brand-name {
+    @extend %p-light;
+    padding-top: 1.3rem;
+    padding-left: .5rem;
+  }
+
+  &_desc {
+    @extend %p-semiBold;
+    padding: 3px 0;
+    padding-left: .5rem;
+  }
+
+  &_prices {
+    @extend %p-normal;
+    padding-left: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  &_price-old {
+    position: relative;
+    text-decoration: line-through;
+    padding-right: 1rem;
+  }
+
+  &_price-new {
+    color: $secondary-color;
+  }
+}

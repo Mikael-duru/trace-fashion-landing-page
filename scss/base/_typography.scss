@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+$font-stack: 'Poppins', sans-serif;
+
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semiBold: 600;
+$font-bold: 700;
+
+%h2-mobile {
+  font-size: 3rem;
+  line-height: 80px;
+  font-weight: $font-bold;
+}
+
+%h3 {
+  font-size: 1.25rem;
+  line-height: 30px;
+  font-weight: $font-bold;
+}
+
+%h3-semiBold {
+  font-size: 1.25rem;
+  line-height: 30px;
+  font-weight: $font-semiBold;
+}
+
+%p-semiBold {
+  font-size: 0.9375rem;
+  line-height: 22px;
+  font-weight: $font-semiBold;
+}
+
+
+%p-medium {
+  font-size: 1.1rem;
+  line-height: 27px;
+  font-weight: $font-medium;
+}
+
+%p-normal {
+  font-size: 0.9375rem;
+  line-height: 22px;
+  font-weight: $font-normal;
+}
+
+%p-light {
+  font-size: 0.9375rem;
+  line-height: 22px;
+  font-weight: $font-light;
+}

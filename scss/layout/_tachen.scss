@@ -1,0 +1,42 @@
+.tachen {
+  margin-top: 75px;
+  position: relative;
+
+  &_content {
+    position: absolute;
+    bottom: 20px;
+    left: 3%;
+  }
+
+  &_excert {
+    font-size: 0.9375rem;
+    line-height: 22px;
+    font-weight: $font-medium;
+  }
+
+  &_heading {
+    font-size: 1.5rem;
+    font-weight: $font-bold;
+    line-height: 1.5;
+    padding-bottom: 5px;
+  }
+
+  &_btn {
+    padding: 4px 6px;
+    font-size: 0.65rem;
+    line-height: 22px;
+    font-weight: $font-medium;
+    letter-spacing: 0.05rem;
+    color: #fff;
+    background-color: $primary-color;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid $primary-color;
+    cursor: pointer;
+
+    &:hover {
+      background-color: transparent;
+      color: $primary-color;
+    }
+  }
+}
